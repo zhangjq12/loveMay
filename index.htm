@@ -91,8 +91,10 @@
                     });
                     return this;
                 };
-                $(".typing").load(function() {
-                    $(this).typewriter();
+                $(".sec5").load(function() {
+                    $(this).find(".typing").each(function() {
+                        $(this).typewriter();
+                    })
                 })
             });
         </script>
