@@ -100,7 +100,7 @@
     position: absolute;
     top: 200px;
     left: 100px;
-    width: 30em; height: 2em;
+    width: 9em; height: 2em;
     border-right: 1px solid transparent;
     animation: typing 3.5s steps(37, end), blink-caret .75s step-end infinite;
     font-family: Consolas, Monaco;
