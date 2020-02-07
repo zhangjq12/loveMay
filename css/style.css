@@ -1,0 +1,35 @@
+@keyframes fade-in {
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+    40% {opacity: 0;}/*过渡状态 透明度为0*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in {/*针对webkit内核*/
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.contain {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.overLay1 {
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    color: blue;
+    animation: fade-in;
+    animation-duration: 1s;
+    -webkit-animation: fade-in 1s;
+}
+.imageOut {
+    /*display: block;*/
+    height: 100%;
+    width: 100%;
+}
