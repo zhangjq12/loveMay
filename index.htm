@@ -56,7 +56,7 @@
         </div>
         <div class="section sec5">
             <div class="contain">
-                <span class="typing">
+                <span class="typing overLay5">
                     <h3 style="color: purple">接下去的日子，<br/>能有你的陪伴，<br/>便是我今生当中<br/>最大的幸运和幸福!</h3>
                     <h3 style="color: rgb(255, 166, 0)">而最让我珍惜的当下，<br/>我只想对喵说：</h3>
                     <h2 style="color: green">我 爱 你！Love U！</h2>
@@ -87,11 +87,12 @@
                             if (sum >= str.length) {
                             clearInterval(timer);
                             }
-                        }, 50);
+                        }, 200);
                     });
                     return this;
                 };
                 $(".typing").each(function() {
+                    setInterval()
                     $(this).typewriter();
                 })
             });
