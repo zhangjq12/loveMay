@@ -51,7 +51,7 @@
     right: 0;
     height: 100%;
     width: 100%;
-    color: blue;
+    color: rgb(255, 0, 179);
     animation: fade-in;
     animation-duration: 1s;
     -webkit-animation: fade-in 1s;
@@ -64,12 +64,56 @@
     right: 0;
     height: 100%;
     width: 100%;
-    color: blue;
+    color: rgb(1, 134, 41);
     animation: slideLeft 1.5s ease-out;
+}
+.overLay3 {
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+    left: 100px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    color: rgb(146, 146, 240);
+    animation: slideRight 1.5s ease-out;
+}
+.overLay4 {
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+    left: 100px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    color: rgb(209, 112, 112);
+    animation: slideUp 1.5s ease-out;
 }
 
 .imageOut {
     /*display: block;*/
     height: 100%;
     width: 100%;
+}
+
+.overLay5 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 30em; height: 2em;
+    border-right: 1px solid transparent;
+    animation: typing 3.5s steps(37, end), blink-caret .75s step-end infinite;
+    font-family: Consolas, Monaco;
+    word-break: break-all;
+    overflow: hidden;
+}
+/* 打印效果 */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 18.5em; }
+}
+/* 光标闪啊闪 */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: currentColor; }
 }
