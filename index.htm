@@ -21,11 +21,15 @@
         <!--<script src='http://cdn.bootcss.com/zepto/1.1.4/zepto.min.js'></script>-->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script>
         <script src="js/pageSlider.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
         <div class="section sec1">
             <div class="contain">
+                <!--<div id="firstPage">
+                    <h3>Love you!<br/>Love you!<br>Love you!Love you!Love you!</h3>
+                </div>-->
                 <span class="overLay1">
-                    <h3>Love you!</h3>
+                    <h3>Love you!<br/>Love you!<br>Love you!Love you!Love you!</h3>
                 </span>
                 <img class="imageOut" src="image/IMG_2900.JPG">
             </div>
@@ -67,6 +71,11 @@
 
         <script>
             $(function() {
+                /*var typed = new Typed('.overLay1', {
+                    strings: ['<h3>Love you! ^1000<br/>Love you! ^1000<br>Love you!Love you!Love you!</h3>'],
+                    typeSpeed: 1000,
+                    cursorChar: '_'
+                });*/
                 var pageSlider = PageSlider.case({
                     startPage: 1,
                     elastic: false
@@ -87,7 +96,7 @@
                             if (sum >= str.length) {
                             clearInterval(timer);
                             }
-                        }, 200);
+                        }, 300);
                     });
                     return this;
                 };
