@@ -19,7 +19,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!--<script src='http://cdn.bootcss.com/zepto/1.1.4/zepto.min.js'></script>-->
-        <script src="js/snowfall.jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js"></script>
+        <!--<script src="js/snowfall.jquery.js"></script>-->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script>
         <script src="js/pageSlider.js"></script>
         <script src="js/StackBlur.js"></script>
@@ -70,7 +71,8 @@
                 <span class="typing overLay7">
                     <h3 style="color: purple">接下去的日子，<br/>能有你的陪伴，<br/>便是我今生当中<br/>最大的幸运和幸福!</h3>
                     <h3 style="color: rgb(255, 166, 0)">而最让我珍惜的当下，<br/>我只想对喵说：</h3>
-                    <h1 class="fadeFont" style="color: green">我! 爱! 你！<br/>Love U！</h1>
+                    <h1 class="fadeFont" style="color: green" text="我! 爱! 你！">我! 爱! 你！</h1>
+                    <h1 class="fadeFont" style="color: green" text="Love U!">Love U！</h1>
                 </span>
                 <img class="imageAvatar" src="image/IMG_2868.JPG">
                 <img class="blur" id="blur" src="image/IMG_2868.JPG">
@@ -92,6 +94,9 @@
             together.setSeconds(0);
             together.setMilliseconds(0);
             stackBlurImage( "blur", "canvas", 20, false );
+            $(".sec6").snowfall({
+                flakeCount: 50,
+            })
             $(function() {
                 var pageSlider = PageSlider.case({
                     startPage: 1,
@@ -133,9 +138,6 @@
                     timeElapse(together);
                 }, 500);
             });
-            $(document).snowfall({
-                flakeCount:50
-            })
             function timeElapse(date){
                 var current = Date();
                 var seconds = (Date.parse(current) - Date.parse(date)) / 1000;

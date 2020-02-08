@@ -37,7 +37,7 @@
         transform: translateX(0%);
     }
 }
-html {
+.sec6{
     overflow: hidden;
     height: 100%;
 }
@@ -56,26 +56,18 @@ html {
 
 .snowfall-flakes:before {
     -webkit-transform: rotate(-45deg);
-    /* Safari 和 Chrome */
     -moz-transform: rotate(-45deg);
-    /* Firefox */
     -ms-transform: rotate(-45deg);
-    /* IE 9 */
     -o-transform: rotate(-45deg);
-    /* Opera */
     transform: rotate(-45deg);
 }
 
 .snowfall-flakes:after {
     left: 4px;
     -webkit-transform: rotate(45deg);
-    /* Safari 和 Chrome */
     -moz-transform: rotate(45deg);
-    /* Firefox */
     -ms-transform: rotate(45deg);
-    /* IE 9 */
     -o-transform: rotate(45deg);
-    /* Opera */
     transform: rotate(45deg);
 }
 .contain {
@@ -204,9 +196,10 @@ html {
     content: attr(text);
     position: absolute;
     z-index: 10;
-    color:rgb(238, 217, 31);
+    color:rgb(250, 192, 0);
     -webkit-mask:linear-gradient(to left, red, transparent );
 }
+
 /*.snowfall-flakes:before,.snowfall-flakes:after{
     content:'';
     position:absolute;
