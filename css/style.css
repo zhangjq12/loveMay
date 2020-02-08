@@ -107,6 +107,13 @@
     width: 100%;
 }
 
+.imageAvatar {
+    top: 10%;
+    left: 75%;
+    width: 100px;
+    height: 100px;
+}
+
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
