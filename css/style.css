@@ -120,6 +120,19 @@
     width: 100%;
     opacity: 1;
 }
+#canvas {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.blur {
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+:root .blur {
+    display: none; /* IE9+, Firefox, Chrome, Opera - hidden */
+    filter: none; /* no IE9 */
+}
+
 .overLay6 {
     position: absolute;
     top: 400px;

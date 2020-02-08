@@ -22,6 +22,7 @@
         <script src="js/snowfall.jquery.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js'></script>
         <script src="js/pageSlider.js"></script>
+        <script src="js/StackBlur.js"></script>
 
         <div class="section sec1">
             <div class="contain">
@@ -73,7 +74,8 @@
                     <h1 style="color: green">我! 爱! 你！<br/>Love U！</h1>
                 </span>
                 <img class="imageAvatar" src="image/IMG_2868.JPG">
-                <img class="imageOut2" src="image/IMG_2868.JPG">
+                <img class="blur" id="blur" src="image/IMG_2868.JPG">
+                <canvas id="canvas"></canvas>
                 <span class="overLay6">
                     <h3 style="color: purple">已经持续爱了：</h3>
                     <p><span id="startClock"></span></p>
@@ -90,6 +92,7 @@
             together.setMinutes(30);
             together.setSeconds(0);
             together.setMilliseconds(0);
+            stackBlurImage( "blur", "canvas", 20, false );
             $(function() {
                 var pageSlider = PageSlider.case({
                     startPage: 1,
