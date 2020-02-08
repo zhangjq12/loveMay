@@ -147,8 +147,8 @@
 .sec6 {
     overflow:hidden;
 }
-.snowfall-flakes:before,.snowfall-flakes:after{
-    content:'';  /* 伪类必须添加content属性 */
+/*.snowfall-flakes:before,.snowfall-flakes:after{
+    content:'';
     position:absolute;
     width:19px;
     height:32px;
@@ -160,6 +160,43 @@
     content:'';				
     left:9px;				
     transform:rotate(45deg);
+}*/
+.snowfall-flakes:before,
+.snowfall-flakes:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 10px;
+    height: 16px;
+    background: red;
+    border-radius: 10px 10px 0 0;
+}
+
+.snowfall-flakes:before {
+    -webkit-transform: rotate(-45deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(-45deg);
+    /* Firefox */
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -o-transform: rotate(-45deg);
+    /* Opera */
+    transform: rotate(-45deg);
+}
+
+.snowfall-flakes:after {
+    left: 4px;
+    -webkit-transform: rotate(45deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(45deg);
+    /* Firefox */
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -o-transform: rotate(45deg);
+    /* Opera */
+    transform: rotate(45deg);
 }
 
 
