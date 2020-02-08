@@ -135,7 +135,7 @@
 
 .overLay6 {
     position: absolute;
-    top: 400px;
+    top: 420px;
     bottom: 0;
     left: 50px;
     right: 0;
@@ -143,6 +143,9 @@
     width: 100%;
     color: rgb(209, 112, 112);
     animation: fade-in 3s;
+}
+.sec6 {
+    overflow:hidden;
 }
 .snowfall-flakes:before,.snowfall-flakes:after{
     content:'';  /* 伪类必须添加content属性 */
