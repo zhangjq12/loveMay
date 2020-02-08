@@ -41,6 +41,43 @@ html {
     overflow: hidden;
     height: 100%;
 }
+.snowfall-flakes:before,
+.snowfall-flakes:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: block;
+    width: 10px;
+    height: 16px;
+    background: red;
+    border-radius: 10px 10px 0 0;
+}
+
+.snowfall-flakes:before {
+    -webkit-transform: rotate(-45deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(-45deg);
+    /* Firefox */
+    -ms-transform: rotate(-45deg);
+    /* IE 9 */
+    -o-transform: rotate(-45deg);
+    /* Opera */
+    transform: rotate(-45deg);
+}
+
+.snowfall-flakes:after {
+    left: 4px;
+    -webkit-transform: rotate(45deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(45deg);
+    /* Firefox */
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -o-transform: rotate(45deg);
+    /* Opera */
+    transform: rotate(45deg);
+}
 .contain {
     position: relative;
     width: 100%;
@@ -159,6 +196,17 @@ html {
     color: rgb(209, 112, 112);
     animation: fade-in 3s;
 }
+.fadeFont{
+    position: relative;
+    color: rgb(16, 156, 3);
+}
+.fadeFont:before{
+    content: attr(text);
+    position: absolute;
+    z-index: 10;
+    color:rgb(238, 217, 31);
+    -webkit-mask:linear-gradient(to left, red, transparent );
+}
 /*.snowfall-flakes:before,.snowfall-flakes:after{
     content:'';
     position:absolute;
@@ -173,43 +221,6 @@ html {
     left:9px;				
     transform:rotate(45deg);
 }*/
-.snowfall-flakes:before,
-.snowfall-flakes:after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    display: block;
-    width: 10px;
-    height: 16px;
-    background: red;
-    border-radius: 10px 10px 0 0;
-}
-
-.snowfall-flakes:before {
-    -webkit-transform: rotate(-45deg);
-    /* Safari 和 Chrome */
-    -moz-transform: rotate(-45deg);
-    /* Firefox */
-    -ms-transform: rotate(-45deg);
-    /* IE 9 */
-    -o-transform: rotate(-45deg);
-    /* Opera */
-    transform: rotate(-45deg);
-}
-
-.snowfall-flakes:after {
-    left: 4px;
-    -webkit-transform: rotate(45deg);
-    /* Safari 和 Chrome */
-    -moz-transform: rotate(45deg);
-    /* Firefox */
-    -ms-transform: rotate(45deg);
-    /* IE 9 */
-    -o-transform: rotate(45deg);
-    /* Opera */
-    transform: rotate(45deg);
-}
 
 
 .typed-cursor{
