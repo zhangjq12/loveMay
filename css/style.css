@@ -133,6 +133,18 @@
     filter: none; /* no IE9 */
 }
 
+.overLay7 {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    color: rgb(209, 112, 112);
+    animation: fade-in 3s;
+}
+
 .overLay6 {
     position: absolute;
     top: 420px;
