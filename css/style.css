@@ -39,6 +39,7 @@
 }
 html {
     overflow: hidden;
+    height: 100%;
 }
 .contain {
     position: relative;
