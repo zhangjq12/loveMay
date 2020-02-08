@@ -117,21 +117,21 @@
                     });
                     return this;
                 };
-                $(".sec5").ready(function() {
-                    $(this).find(".typing").each(function() {
-                        $(this).typewriter();
-                    });
+            });
+            $(".sec5").ready(function() {
+                $(this).find(".typing").each(function() {
+                    $(this).typewriter();
                 });
-                $(".sec6").ready(function() {
-                    $(this).find(".typing").each(function() {
-                        $(this).typewriter();
-                    });
-                    setInterval(1000);
+            });
+            $(".sec6").ready(function() {
+                $(this).find(".typing").each(function() {
+                    $(this).typewriter();
+                });
+                setInterval(1000);
+                timeElapse(together);
+                setInterval(function () {
                     timeElapse(together);
-                    setInterval(function () {
-                        timeElapse(together);
-                    }, 500);
-                })
+                }, 500);
             });
             $(document).snowfall({
                 flakeCount:50
