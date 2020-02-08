@@ -37,11 +37,14 @@
         transform: translateX(0%);
     }
 }
-
+html {
+    overflow: hidden;
+}
 .contain {
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .overLay1 {
     position: absolute;
@@ -100,6 +103,17 @@
     color: rgb(209, 112, 112);
     animation: slideLeft 1.5s ease-out;
 }
+.overLay7 {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    color: rgb(209, 112, 112);
+    animation: fade-in 3s;
+}
 
 .imageOut {
     /*display: block;*/
@@ -133,18 +147,6 @@
     filter: none; /* no IE9 */
 }
 
-.overLay7 {
-    position: absolute;
-    top: 100px;
-    bottom: 0;
-    left: 50px;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    color: rgb(209, 112, 112);
-    animation: fade-in 3s;
-}
-
 .overLay6 {
     position: absolute;
     top: 420px;
@@ -155,9 +157,6 @@
     width: 100%;
     color: rgb(209, 112, 112);
     animation: fade-in 3s;
-}
-.sec6 {
-    overflow:hidden;
 }
 /*.snowfall-flakes:before,.snowfall-flakes:after{
     content:'';
