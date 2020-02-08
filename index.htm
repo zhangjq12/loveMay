@@ -72,7 +72,7 @@
                     <h1 style="color: green">我! 爱! 你！<br/>Love U！</h1>
                 </span>
                 <img class="imageAvatar" src="image/IMG_2868.JPG">
-                <span class="typing2 overLay6">
+                <span class="overLay6">
                     <h3 style="color: purple">已经持续爱了：</h3>
                     <p><span id="startClock"></span></p>
                     <h3 style="color: purple">还要继续爱：</h3>
@@ -123,9 +123,6 @@
                         $(this).typewriter();
                     });
                     setInterval(1000);
-                    $(this).find(".typing2").each(function() {
-                        $(this).typewriter();
-                    });
                     timeElapse(together);
                     setInterval(function () {
                         timeElapse(together);
