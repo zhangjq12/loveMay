@@ -131,6 +131,21 @@
     color: rgb(209, 112, 112);
     animation: fade-in 3s;
 }
+.snowfall-flakes:before,.snowfall-flakes:after{
+    content:'';  /* 伪类必须添加content属性 */
+    position:absolute;
+    width:19px;
+    height:32px;
+    background:red;
+    border-radius:10px 10px 0 0;
+    transform:rotate(-45deg);
+}
+.snowfall-flakes:after{
+    content:'';				
+    left:9px;				
+    transform:rotate(45deg);
+}
+
 
 .typed-cursor{
     opacity: 1;
